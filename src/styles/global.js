@@ -19,6 +19,7 @@ export default createGlobalStyle`
 
   html, body, #root {
     height: 100%;
+    background: linear-gradient(-90deg, #7159c1, #ab59c1);
   }
 
   body {
@@ -26,7 +27,8 @@ export default createGlobalStyle`
   }
 
   body, input, button {
-    font: 14px, 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
   }
 
   a {
