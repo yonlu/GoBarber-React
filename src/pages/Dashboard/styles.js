@@ -28,7 +28,7 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
-    margin-top: 30px;
+    margin: 30px 10px;
   }
 `;
 
