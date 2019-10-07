@@ -31,8 +31,8 @@ export default function SignIn() {
         <Input name="email" type="email" placeholder="Your email" />
         <Input name="password" type="password" placeholder="Your password" />
 
-        <button type="submit">{loading ? 'Loading...' : 'Log in'}</button>
-        <Link to="/register">Create an account</Link>
+        <button type="submit">{loading ? 'Loading...' : 'Sign in'}</button>
+        <Link to="/register">Create an account.</Link>
       </Form>
     </>
   );
