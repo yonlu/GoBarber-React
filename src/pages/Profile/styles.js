@@ -54,6 +54,7 @@ export const Container = styled.div`
       }
     }
   }
+
   button {
     width: 100%;
     margin: 10px 0 0;
@@ -70,4 +71,8 @@ export const Container = styled.div`
       background: ${darken(0.09, '#F64C75')};
     }
   }
+`;
+
+export const FormContainer = styled.div`
+  margin: 0 10px;
 `;

@@ -7,7 +7,7 @@ import { updateProfileRequest } from '~/store/modules/user/actions';
 
 import AvatarInput from './AvatarInput';
 
-import { Container } from './styles';
+import { Container, FormContainer } from './styles';
 
 export default function Profile() {
   const dispatch = useDispatch();
@@ -24,32 +24,34 @@ export default function Profile() {
 
   return (
     <Container>
-      <Form initialData={profile} onSubmit={handleSubmit}>
-        <AvatarInput name="avatar_id" />
+      <FormContainer>
+        <Form initialData={profile} onSubmit={handleSubmit}>
+          <AvatarInput name="avatar_id" />
 
-        <Input name="name" placeholder="Full name" />
-        <Input name="email" type="email" placeholder="Your email" />
+          <Input name="name" placeholder="Full name" />
+          <Input name="email" type="email" placeholder="Your email" />
 
-        <hr />
+          <hr />
 
-        <Input
-          name="oldPassword"
-          type="password"
-          placeholder="Current password"
-        />
-        <Input name="password" type="password" placeholder="New password" />
-        <Input
-          name="confirmPassword"
-          type="password"
-          placeholder="Confirm new password"
-        />
+          <Input
+            name="oldPassword"
+            type="password"
+            placeholder="Current password"
+          />
+          <Input name="password" type="password" placeholder="New password" />
+          <Input
+            name="confirmPassword"
+            type="password"
+            placeholder="Confirm new password"
+          />
 
-        <button type="submit">Update Profile</button>
-      </Form>
+          <button type="submit">Update Profile</button>
+        </Form>
 
-      <button type="button" onClick={handleSignOut}>
-        Log out
-      </button>
+        <button type="button" onClick={handleSignOut}>
+          Log out
+        </button>
+      </FormContainer>
     </Container>
   );
 }
